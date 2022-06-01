@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet file -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Icons Programming -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Slider package -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
     <title>Tugas Akhir Dasar Pemrograman Web | Dicoding</title>
 </head>
 <body>
@@ -12,19 +30,60 @@
         <h1>Let me introduce myself</h1>
         <nav>
             <ul class="navbar">
-                <li><a href="">About Me</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Portfolio</a></li>
+                <li class="nav-link"><a href="#desc">Description</a></li>   
+                <li class="nav-link active"><a href="#about-me">About Me</a></li>
+                <li class="nav-link"><a href="#projects">Projects</a></li>   
             </ul>
         </nav>
     </header>
     <main>
-        <div id="content">
-            <article>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat fugit, illum, nihil commodi earum officiis dignissimos temporibus excepturi reiciendis eveniet rem dolor, qui eligendi tenetur laudantium vitae fuga corrupti voluptatem possimus exercitationem a praesentium! Natus deleniti ut aliquid aut nisi ipsam enim, architecto suscipit, deserunt placeat molestiae consequuntur facere tempore. Natus eligendi dicta minima molestias temporibus! A quo dolor odit recusandae illum ab natus architecto voluptate fugit cumque vero perspiciatis impedit quaerat amet inventore, accusantium, atque ad, quasi aut officia id quos. Corrupti, illo voluptates similique velit est enim dolorum molestias impedit ab. Deserunt tenetur possimus excepturi nam repudiandae natus.</article>
-            <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam harum dolor excepturi officiis, inventore rem consequuntur. Expedita a aspernatur odio quaerat inventore earum recusandae ipsa qui deleniti odit nihil ad, optio ex exercitationem placeat officiis accusamus deserunt ea et, ratione est eaque totam. Ab, natus ducimus! Veritatis, laborum natus fugiat et ut sapiente. Illo porro, magni debitis ea magnam cupiditate eligendi provident commodi culpa beatae distinctio perspiciatis, ut ducimus dolore, doloremque dolor sint obcaecati blanditiis atque perferendis deleniti dolorum corrupti suscipit? Eum maiores doloremque quos culpa reiciendis commodi distinctio magni veniam optio perspiciatis incidunt eveniet neque temporibus pariatur, officia deserunt?</article>
+        <div class="left-side">
+            <article id="desc">
+                <p>Seorang yang suka belajar hal baru mengenai teknologi khususnya programming, yang sekarang sedang mendalami bidang front end development dengan menggunakan library react serta beberapa framework yang berbasis react seperti nextjs dan react native.</p>
+            </article>
+            
+            <!-- Slider Carousel -->
+            <section id="projects" class="slider">
+                <div class="carousel-container">
+                    <div class="subcontainer">
+                        <div class="slider-wrapper">
+                            <div class="controllers">
+                                <h1 class="section-title">Projects</h1>
+                                <div class="controls">
+                                    <button class="prev">
+                                        <ion-icon name="chevron-back-outline"></ion-icon>
+                                    </button>
+                                    <button class="next">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="my-slider">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </div>
-        <aside></aside>
+        <aside>
+            <div id="about-me">
+                <h1 class="section-title">About Me</h1>
+                <figure>
+                    <img src="assets/img/profile.png" class="photo" alt="profile picture">
+                </figure>
+                <div class="name-group">
+                    <h1 class="name">Khoerul Rizal</h1>
+                    <h4 class="role">Front End Developer</h4>
+                </div>
+                <ul class="skill-group"></ul>
+            </div>
+        </aside>
     </main>
-    <footer><p>Made with ❤️ by <a href="" >Khoerul Rizal</a></p></footer>
+    <footer><p>Made with ❤️ by <a href="https://github.com/rizalthewebdev" target="_blank" rel="noreferrer">Khoerul Rizal</a></p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
